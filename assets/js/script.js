@@ -7,6 +7,17 @@ $(() => {
     return false;
   });
 
+
+  //dropdown
+  $(".dropdown").hover(function () {
+    let isHovered = $(this).is(":hover");
+    if (isHovered) {
+      $(this).next("ul").stop().slideDown(100);
+    } else {
+      $(this).next("ul").stop().slideUp(100);
+    }
+  });
+
   $(".dropdown").click(function () {
     $("#cat").fadeToggle(300);
   });
@@ -22,16 +33,6 @@ $(() => {
     $(this).toggleClass("after");
     $(this).siblings().fadeToggle();
     $(this).nextAll("div").fadeToggle();
-  });
-
-  //dropdown
-  $(".dropdown").hover(function () {
-    let isHovered = $(this).is(":hover");
-    if (isHovered) {
-      $(this).next("ul").stop().slideDown(100);
-    } else {
-      $(this).next("ul").stop().slideUp(100);
-    }
   });
 
   $(".toggle").click(function () {
@@ -90,7 +91,6 @@ $(() => {
 
   $(".dropdown").click(function () {
     $(this).find(".dropdown-menu").slideToggle("fast");
-    $(this).toggleClass("shadow");
   });
 
   $("#fin").mouseenter(function () {

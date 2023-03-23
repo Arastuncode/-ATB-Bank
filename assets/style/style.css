@@ -198,6 +198,7 @@ header { position: relative; }
     width: 95% !important;
     display: block;
 }
+.drop{ margin: auto;}
 
 .drop::after,
 .dropp::after {
@@ -228,7 +229,7 @@ header { position: relative; }
 }
 
 #menu li { padding: 10px 0; }
-#drop-sub { display: none; }
+#drop-sub { display: none; padding:0 10px;}
 .after::after { content: none; }
 
 .after::before {
@@ -243,7 +244,7 @@ header { position: relative; }
 
 .tcenter {
     text-align: center;
-    font-size: .8em !important;
+    font-size: 1em !important;
 }
 
 #menu {
